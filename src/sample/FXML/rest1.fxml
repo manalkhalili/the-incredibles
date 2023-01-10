@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.JAVA.rest1Controller">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="800.0" prefWidth="850.0" style="-fx-background-color: #FFFFF0;">
+            <children>
+               <ImageView fitHeight="80.0" fitWidth="82.0" layoutX="779.0" layoutY="3.0" AnchorPane.bottomAnchor="717.0" AnchorPane.leftAnchor="779.0" AnchorPane.rightAnchor="43.19799999999998" AnchorPane.topAnchor="3.0">
+                  <image>
+                     <Image url="@username.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="65.0" fitWidth="95.0" layoutX="56.0" layoutY="183.0" AnchorPane.bottomAnchor="721.0" AnchorPane.leftAnchor="13.799999999999997" AnchorPane.rightAnchor="741.0" AnchorPane.topAnchor="14.0">
+                  <image>
+                     <Image url="@logo.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="510.0" fitWidth="850.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="-2.399" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="286.0">
+                  <image>
+                     <Image url="@menu11.png" />
+                  </image>
+               </ImageView>
+               <Button fx:id="ClickToTheBillButton" layoutX="14.0" layoutY="142.0" mnemonicParsing="false" onAction="#GoToBill" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: #B80000;" text="BILL" textFill="WHITE" AnchorPane.bottomAnchor="516.8" AnchorPane.leftAnchor="367.0" AnchorPane.rightAnchor="368.6" AnchorPane.topAnchor="244.0">
+                  <font>
+                     <Font name="System Bold" size="18.0" />
+                  </font>
+                  <effect>
+                     <Bloom />
+                  </effect>
+               </Button>
+               <Text layoutX="54.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 NIS" AnchorPane.bottomAnchor="340.737" AnchorPane.leftAnchor="184.41" AnchorPane.rightAnchor="624.78" AnchorPane.topAnchor="441.9">
+                  <font>
+                     <Font name="System Bold" size="13.0" />
+                  </font>
+               </Text>
+               <Text layoutX="20.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15 NIS" AnchorPane.bottomAnchor="299.737" AnchorPane.leftAnchor="184.41" AnchorPane.rightAnchor="624.78" AnchorPane.topAnchor="482.971">
+                  <font>
+                     <Font name="System Bold" size="13.0" />
+                  </font>
+               </Text>
+               <Text layoutX="34.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20 NIS" AnchorPane.bottomAnchor="263.737" AnchorPane.leftAnchor="184.41" AnchorPane.rightAnchor="624.78" AnchorPane.topAnchor="518.971">
+                  <font>
+                     <Font name="System Bold" size="13.0" />
+                  </font>
+               </Text>
+               <Text fx:id="ClickOnTheNameText1" layoutX="54.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLICK ON THE NAME OF THE MEAL TO ORDER IT !!" AnchorPane.bottomAnchor="573.486" AnchorPane.leftAnchor="259.88" AnchorPane.rightAnchor="255.71" AnchorPane.topAnchor="207.892">
+                  <font>
+                     <Font name="System Bold Italic" size="14.0" />
+                  </font>
+               </Text>
+               <Text fx:id="AlBashaRestText1" layoutX="81.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AL BASHA RESTAURANT" wrappingWidth="436.63990783691406" AnchorPane.bottomAnchor="603.964" AnchorPane.leftAnchor="221.83" AnchorPane.rightAnchor="191.36" AnchorPane.topAnchor="148.152">
+                  <font>
+                     <Font name="System Bold Italic" size="36.0" />
+                  </font>
+               </Text>
+               <Text layoutX="88.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15 NIS" AnchorPane.bottomAnchor="148.737984375" AnchorPane.leftAnchor="212.41" AnchorPane.rightAnchor="596.78" AnchorPane.topAnchor="633.971">
+                  <font>
+                     <Font name="System Bold" size="13.0" />
+                  </font>
+               </Text>
+               <Text layoutX="75.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15 NIS" AnchorPane.bottomAnchor="106.737" AnchorPane.leftAnchor="212.41" AnchorPane.rightAnchor="596.78" AnchorPane.topAnchor="675.971">
+                  <font>
+                     <Font name="System Bold" size="13.0" />
+                  </font>
+               </Text>
+               <Text layoutX="92.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5 NIS" AnchorPane.bottomAnchor="62.7373" AnchorPane.leftAnchor="216.94" AnchorPane.rightAnchor="600.25" AnchorPane.topAnchor="719.971">
+                  <font>
+                     <Font name="System Bold" size="13.0" />
+                  </font>
+               </Text>
+               <Text layoutX="61.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 NIS" AnchorPane.bottomAnchor="21.7373" AnchorPane.leftAnchor="212.41" AnchorPane.rightAnchor="596.78" AnchorPane.topAnchor="760.971">
+                  <font>
+                     <Font name="System Bold" size="13.0" />
+                  </font>
+               </Text>
+               <Text layoutX="129.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30 NIS" AnchorPane.bottomAnchor="243.737" AnchorPane.leftAnchor="534.41" AnchorPane.rightAnchor="274.78" AnchorPane.topAnchor="538.971">
+                  <font>
+                     <Font name="System Bold" size="13.0" />
+                  </font>
+               </Text>
+               <Text layoutX="535.0" layoutY="601.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25 NIS" AnchorPane.bottomAnchor="195.7373046875" AnchorPane.leftAnchor="535.0" AnchorPane.rightAnchor="328.97925" AnchorPane.topAnchor="586.9716796875">
+                  <font>
+                     <Font name="System Bold" size="13.0" />
+                  </font>
+               </Text>
+               <Text layoutX="114.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30 NIS" AnchorPane.bottomAnchor="153.737" AnchorPane.leftAnchor="535.41" AnchorPane.rightAnchor="273.78" AnchorPane.topAnchor="628.971">
+                  <font>
+                     <Font name="System Bold" size="13.0" />
+                  </font>
+               </Text>
+               <Text layoutX="52.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25 NIS" AnchorPane.bottomAnchor="110.737" AnchorPane.leftAnchor="535.41" AnchorPane.rightAnchor="273.78" AnchorPane.topAnchor="671.971">
+                  <font>
+                     <Font name="System Bold" size="13.0" />
+                  </font>
+               </Text>
+               <Text layoutX="116.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15 NIS" AnchorPane.bottomAnchor="25.7373" AnchorPane.leftAnchor="515.41" AnchorPane.rightAnchor="293.78" AnchorPane.topAnchor="756.971">
+                  <font>
+                     <Font name="System Bold" size="13.0" />
+                  </font>
+               </Text>
+               <Text layoutX="88.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25 NIS" AnchorPane.bottomAnchor="244.737" AnchorPane.leftAnchor="746.41" AnchorPane.rightAnchor="62.781" AnchorPane.topAnchor="537.971">
+                  <font>
+                     <Font name="System Bold" size="13.0" />
+                  </font>
+               </Text>
+               <Text layoutX="98.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25 NIS" AnchorPane.bottomAnchor="195.737" AnchorPane.leftAnchor="746.41" AnchorPane.rightAnchor="62.781" AnchorPane.topAnchor="586.971">
+                  <font>
+                     <Font name="System Bold" size="13.0" />
+                  </font>
+               </Text>
+               <Text layoutX="787.0" layoutY="643.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30 NIS" AnchorPane.bottomAnchor="153.7373046875" AnchorPane.leftAnchor="787.0" AnchorPane.rightAnchor="76.97924999999998" AnchorPane.topAnchor="628.9716796875">
+                  <font>
+                     <Font name="System Bold" size="13.0" />
+                  </font>
+               </Text>
+               <Text layoutX="747.0" layoutY="686.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30 NIS" AnchorPane.bottomAnchor="110.7373046875" AnchorPane.leftAnchor="747.0" AnchorPane.rightAnchor="116.97924999999998" AnchorPane.topAnchor="671.9716796875">
+                  <font>
+                     <Font name="System Bold" size="13.0" />
+                  </font>
+               </Text>
+               <Text layoutX="121.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7 NIS" AnchorPane.bottomAnchor="23.7373" AnchorPane.leftAnchor="762.94" AnchorPane.rightAnchor="54.258" AnchorPane.topAnchor="758.971">
+                  <font>
+                     <Font name="System Bold" size="13.0" />
+                  </font>
+               </Text>
+               <Button fx:id="HOMEButton" layoutX="237.0" layoutY="94.0" mnemonicParsing="false" onAction="#Home" prefHeight="44.0" prefWidth="98.0" style="-fx-background-color: #FFFFF0;" text="HOME">
+                  <font>
+                     <Font name="MV Boli" size="18.0" />
+                  </font>
+               </Button>
+               <Button fx:id="OrderNowButton" layoutX="446.0" layoutY="94.0" mnemonicParsing="false" onAction="#OrderNow" prefHeight="44.0" prefWidth="156.0" style="-fx-background-color: #FFFFF0;" text="ORDER NOW">
+                  <font>
+                     <Font name="MV Boli" size="18.0" />
+                  </font>
+               </Button>
+               <Button layoutX="116.0" layoutY="3.0" mnemonicParsing="false" onAction="#TheInc" prefHeight="86.0" prefWidth="367.0" style="-fx-background-color: #FFFFF0;" text="THE INCREDIBLES">
+                  <font>
+                     <Font name="MV Boli" size="36.0" />
+                  </font>
+               </Button>
+               <Button fx:id="usernameButton" layoutX="623.0" layoutY="14.0" mnemonicParsing="false" onAction="#Username" prefHeight="44.0" prefWidth="156.0" style="-fx-background-color: #FFFFF0;" text="Username">
+                  <font>
+                     <Font name="MV Boli" size="24.0" />
+                  </font>
+               </Button>
+               <Button fx:id="CROSSIANT" layoutX="28.0" layoutY="437.0" mnemonicParsing="false" onAction="#CROSSIANT" prefHeight="26.0" prefWidth="89.0" style="-fx-background-color: #FFFFF0;" text="CROSSIANT" textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Button fx:id="GARLIC_BREAD" layoutX="13.0" layoutY="478.0" mnemonicParsing="false" onAction="#GARLIC_BREAD" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: #FFFFF0;" text="GARLIC BREAD" textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Button fx:id="CREPE" layoutX="28.0" layoutY="514.0" mnemonicParsing="false" onAction="#CREPE" prefHeight="26.0" prefWidth="59.0" style="-fx-background-color: #FFFFF0;" text="CREPE" textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Button fx:id="TEA" layoutX="60.0" layoutY="629.0" mnemonicParsing="false" onAction="#TEA" prefHeight="26.0" prefWidth="43.0" style="-fx-background-color: #FFFFF0;" text="TEA" textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Button fx:id="COFFEE" layoutX="115.0" layoutY="629.0" mnemonicParsing="false" onAction="#COFFEE" prefHeight="26.0" prefWidth="64.0" style="-fx-background-color: #FFFFF0;" text="COFFEE" textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Text layoutX="106.0" layoutY="647.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Text>
+               <Button fx:id="fresh_Strawberry" layoutX="58.0" layoutY="671.0" mnemonicParsing="false" onAction="#FreshStrawberry" prefHeight="26.0" prefWidth="149.0" style="-fx-background-color: #FFFFF0;" text="FRESH STRAWBERRY " textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Button fx:id="APPLE_JUICE" layoutX="60.0" layoutY="715.0" mnemonicParsing="false" onAction="#APPLEJUICE" prefHeight="26.0" prefWidth="97.0" style="-fx-background-color: #FFFFF0;" text="APPLE JUICE" textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Button fx:id="COCKTAIL" layoutX="60.0" layoutY="757.0" mnemonicParsing="false" onAction="#COCKTAIL" prefHeight="26.0" prefWidth="81.0" style="-fx-background-color: #FFFFF0;" text="COCKTAIL" textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Button fx:id="EGG_AND_CHEESE" layoutX="598.0" layoutY="535.0" mnemonicParsing="false" onAction="#EGG_AND_CHEESE" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: #FFFFF0;" text="EGG AND CHEESE" textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Button fx:id="GRILLED_CHEESE" layoutX="598.0" layoutY="585.0" mnemonicParsing="false" onAction="#GRILLED_CHEESE" prefHeight="6.0" prefWidth="110.0" style="-fx-background-color: #FFFFF0;" text="GRILLED CHEESE" textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Button fx:id="SteakWithWhiteSauce" layoutX="598.0" layoutY="625.0" mnemonicParsing="false" onAction="#SteakWithWhiteSauce" prefHeight="26.0" prefWidth="175.0" style="-fx-background-color: #FFFFF0;" text="STEAK WITH WHITE SAUCE" textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Button fx:id="BANHMI" layoutX="611.0" layoutY="667.0" mnemonicParsing="false" onAction="#BANHMI" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: #FFFFF0;" text="BANHMI" textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Button fx:id="PizzaMarg" layoutX="289.0" layoutY="534.0" mnemonicParsing="false" onAction="#PizzaMarg" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #FFFFF0;" text="PIZZA  MARGHERITA " textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Button fx:id="Salami" layoutX="451.0" layoutY="535.0" mnemonicParsing="false" onAction="#Salami" prefHeight="26.0" prefWidth="73.0" style="-fx-background-color: #FFFFF0;" text="  SALAMI" textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Text layoutX="437.0" layoutY="553.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Text>
+               <Button fx:id="PastaPologneses" layoutX="295.0" layoutY="584.0" mnemonicParsing="false" onAction="#PastaPologneses" prefHeight="26.0" prefWidth="134.0" style="-fx-background-color: #FFFFF0;" text="PASTA POLOGNESE " textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Text layoutX="437.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Text>
+               <Button fx:id="LASAGNA" layoutX="451.0" layoutY="582.0" mnemonicParsing="false" onAction="#LASAGNA" prefHeight="26.0" prefWidth="84.0" style="-fx-background-color: #FFFFF0;" text="LASAGNA" textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Button fx:id="ChickenBurger" layoutX="273.0" layoutY="625.0" mnemonicParsing="false" onAction="#ChickenBurger" prefHeight="26.0" prefWidth="121.0" style="-fx-background-color: #FFFFF0;" text="CHICKEN BURGER " textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Text layoutX="405.0" layoutY="642.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Text>
+               <Button fx:id="CheeseBurger" layoutX="419.0" layoutY="625.0" mnemonicParsing="false" onAction="#CheeseBurger" prefHeight="26.0" prefWidth="113.0" style="-fx-background-color: #FFFFF0;" text="CHEESE BURGER " textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Button fx:id="CheeseHotDog" layoutX="286.0" layoutY="667.0" mnemonicParsing="false" onAction="#CheeseHotDog" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: #FFFFF0;" text="CHEESE HOT DOG" textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Text layoutX="416.0" layoutY="685.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Text>
+               <Button fx:id="ChiliDog" layoutX="432.0" layoutY="667.0" mnemonicParsing="false" onAction="#ChiliDog" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: #FFFFF0;" text="CHILI DOG" textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Button fx:id="Doughnut" layoutX="300.0" layoutY="752.0" mnemonicParsing="false" onAction="#Doughnut" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #FFFFF0;" text="DOUGHNUT " textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Button fx:id="CheeseCake" layoutX="416.0" layoutY="752.0" mnemonicParsing="false" onAction="#CheeseCake" prefHeight="26.0" prefWidth="93.0" style="-fx-background-color: #FFFFF0;" text="CHEESECAKE " textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Text layoutX="405.0" layoutY="770.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Text>
+               <Button fx:id="CHIPS" layoutX="611.0" layoutY="757.0" mnemonicParsing="false" onAction="#CHIPS" prefHeight="26.0" prefWidth="59.0" style="-fx-background-color: #FFFFF0;" text="CHIPS" textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Text layoutX="682.0" layoutY="773.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Text>
+               <Button fx:id="TOAST" layoutX="701.0" layoutY="757.0" mnemonicParsing="false" onAction="#TOAST" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: #FFFFF0;" text="TOAST " textFill="#0b0000">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+            </children></AnchorPane>
+        </Scene>
+    </scene>
+</Stage>

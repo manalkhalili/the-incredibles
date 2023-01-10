@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.JAVA.CustomerTable">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="800.0" prefWidth="850.0" style="-fx-background-color: #FFFFF0;">
+            <children>
+               <TableView fx:id="CustomerTable" onSort="#initialize" prefHeight="550.0" prefWidth="820.0" style="-fx-background-color: #FFFFF0;" AnchorPane.bottomAnchor="14.6" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="235.0">
+                  <columns>
+                     <TableColumn fx:id="FName" prefWidth="75.0" text="First name" />
+                     <TableColumn fx:id="LName" prefWidth="75.0" text="Last name" />
+                     <TableColumn fx:id="CustomerUserName" prefWidth="127.39999389648438" text="Customer username" />
+                     <TableColumn fx:id="CustomerAddress" prefWidth="128.39999389648438" text="Customer address" />
+                     <TableColumn fx:id="CustomerPhone" prefWidth="77.19998168945312" text="Customer phone" />
+                     <TableColumn fx:id="Birth" prefWidth="97.199951171875" text="Date of birth" />
+                     <TableColumn fx:id="Gender" prefWidth="75.0" text="Gender" />
+                  </columns>
+                  <columnResizePolicy>
+                     <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                  </columnResizePolicy>
+                  <effect>
+                     <DropShadow>
+                        <input>
+                           <InnerShadow />
+                        </input>
+                        <color>
+                           <Color red="0.46578946709632874" green="0.019839180633425713" blue="0.019839180633425713" />
+                        </color>
+                     </DropShadow>
+                  </effect>
+               </TableView>
+               <ImageView fitHeight="133.0" fitWidth="95.0" AnchorPane.bottomAnchor="562.0" AnchorPane.leftAnchor="13.799" AnchorPane.rightAnchor="741.0" AnchorPane.topAnchor="105.0">
+                  <image>
+                     <Image url="@girl.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="65.0" fitWidth="95.0" layoutX="18.0" layoutY="22.0">
+                  <image>
+                     <Image url="@logo.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="80.0" fitWidth="82.0" layoutX="733.0" layoutY="14.0">
+                  <image>
+                     <Image url="@username.png" />
+                  </image>
+               </ImageView>
+               <Button fx:id="HOMEButton" layoutX="248.0" layoutY="128.0" mnemonicParsing="false" onAction="#Home" prefHeight="44.0" prefWidth="98.0" style="-fx-background-color: #FFFFF0;" text="HOME">
+                  <font>
+                     <Font name="MV Boli" size="18.0" />
+                  </font>
+               </Button>
+               <Button fx:id="OrderNowButton" layoutX="455.0" layoutY="128.0" mnemonicParsing="false" onAction="#OrderNow" prefHeight="44.0" prefWidth="156.0" style="-fx-background-color: #FFFFF0;" text="ORDER NOW">
+                  <font>
+                     <Font name="MV Boli" size="18.0" />
+                  </font>
+               </Button>
+               <Button layoutX="114.0" layoutY="10.0" mnemonicParsing="false" onAction="#TheInc" prefHeight="86.0" prefWidth="367.0" style="-fx-background-color: #FFFFF0;" text="THE INCREDIBLES">
+                  <font>
+                     <Font name="MV Boli" size="36.0" />
+                  </font>
+               </Button>
+               <Button fx:id="OrderNowButton1" layoutX="577.0" layoutY="24.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="156.0" style="-fx-background-color: #FFFFF0;" text="Username">
+                  <font>
+                     <Font name="MV Boli" size="24.0" />
+                  </font>
+               </Button>
+            </children></AnchorPane>
+        </Scene>
+    </scene>
+</Stage>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.JAVA.signInController">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="800.0" prefWidth="850.0" style="-fx-background-color: #FFFFF0;">
+            <children>
+               <ImageView fitHeight="53.0" fitWidth="77.0" AnchorPane.bottomAnchor="733.0" AnchorPane.leftAnchor="222.0" AnchorPane.rightAnchor="551.0" AnchorPane.topAnchor="14.0">
+                  <image>
+                     <Image url="@logo.png" />
+                  </image>
+               </ImageView>
+               <Label layoutX="331.0" layoutY="22.0" prefHeight="62.0" prefWidth="341.0" text="THE INCREDIBLES" AnchorPane.bottomAnchor="728.0" AnchorPane.leftAnchor="319.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="10.0">
+                  <font>
+                     <Font name="MV Boli" size="36.0" />
+                  </font>
+                  <cursor>
+                     <Cursor fx:constant="DEFAULT" />
+                  </cursor>
+               </Label>
+               <Label fx:id="ManagerLabel" prefHeight="37.0" prefWidth="231.0" text="Manager's username :" AnchorPane.bottomAnchor="672.0" AnchorPane.leftAnchor="167.0" AnchorPane.rightAnchor="452.0" AnchorPane.topAnchor="91.0">
+                  <font>
+                     <Font name="MV Boli" size="21.0" />
+                  </font>
+               </Label>
+               <TextField fx:id="ManagerUserName" layoutX="67.0" layoutY="338.0" AnchorPane.bottomAnchor="676.0" AnchorPane.leftAnchor="415.0" AnchorPane.rightAnchor="286.0" AnchorPane.topAnchor="99.0" />
+               <Label fx:id="passwordmanager" layoutX="14.0" layoutY="104.0" prefHeight="37.0" prefWidth="227.0" text=" Manager's password :" AnchorPane.bottomAnchor="635.0" AnchorPane.leftAnchor="155.0" AnchorPane.rightAnchor="468.0" AnchorPane.topAnchor="128.0">
+                  <font>
+                     <Font name="MV Boli" size="21.0" />
+                  </font>
+               </Label>
+               <PasswordField fx:id="ManagerPass" layoutX="14.0" layoutY="184.0" AnchorPane.bottomAnchor="639.0" AnchorPane.leftAnchor="415.0" AnchorPane.rightAnchor="286.0" AnchorPane.topAnchor="136.0" />
+               <Button fx:id="ManagerSignInButton" layoutX="177.0" layoutY="219.0" mnemonicParsing="false" onAction="#ManagerSignInButton" prefHeight="32.0" prefWidth="76.0" style="-fx-background-color: #00c9b2;" text="Sign in" AnchorPane.bottomAnchor="660.0" AnchorPane.leftAnchor="624.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="105.0">
+                  <font>
+                     <Font name="MV Boli" size="13.0" />
+                  </font>
+               </Button>
+               <Button fx:id="MnanagerSignUpButton" layoutX="467.0" layoutY="180.0" mnemonicParsing="false" onAction="#ManagerSignUpButton" prefHeight="32.0" prefWidth="76.0" style="-fx-background-color: #B80000;" text="Sign up" textFill="WHITE" AnchorPane.bottomAnchor="596.0" AnchorPane.leftAnchor="303.0" AnchorPane.rightAnchor="471.0" AnchorPane.topAnchor="172.0">
+                  <font>
+                     <Font name="MV Boli" size="13.0" />
+                  </font>
+                  <effect>
+                     <Bloom />
+                  </effect>
+               </Button>
+               <Label fx:id="ClientLabel" layoutX="144.0" layoutY="244.0" prefHeight="37.0" prefWidth="239.0" text="Customer's username :" AnchorPane.bottomAnchor="495.0" AnchorPane.leftAnchor="155.0" AnchorPane.rightAnchor="456.0" AnchorPane.topAnchor="268.0">
+                  <font>
+                     <Font name="MV Boli" size="21.0" />
+                  </font>
+               </Label>
+               <TextField fx:id="CustomerUserName" layoutX="267.0" layoutY="469.0" prefHeight="25.0" prefWidth="148.0" AnchorPane.bottomAnchor="499.0" AnchorPane.leftAnchor="415.0" AnchorPane.rightAnchor="287.0" AnchorPane.topAnchor="276.0" />
+               <Label fx:id="ClientPassword" layoutX="135.0" layoutY="364.0" prefHeight="37.0" prefWidth="221.0" text="Customer's password :" AnchorPane.bottomAnchor="458.0" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="471.0" AnchorPane.topAnchor="305.0">
+                  <font>
+                     <Font name="MV Boli" size="21.0" />
+                  </font>
+               </Label>
+               <PasswordField fx:id="CustomerPass" layoutX="245.0" layoutY="547.0" AnchorPane.bottomAnchor="462.0" AnchorPane.leftAnchor="415.0" AnchorPane.rightAnchor="286.0" AnchorPane.topAnchor="313.0" />
+               <Button fx:id="CustomerSignInButton" layoutX="586.0" layoutY="410.0" mnemonicParsing="false" onAction="#CustomerSignInButton" prefHeight="32.0" prefWidth="76.0" style="-fx-background-color: #00c9b2;" text="Sign in" AnchorPane.bottomAnchor="479.0" AnchorPane.leftAnchor="624.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="289.0">
+                  <font>
+                     <Font name="MV Boli" size="13.0" />
+                  </font>
+               </Button>
+               <Button fx:id="ManagerNewButton2" layoutX="37.0" layoutY="332.0" mnemonicParsing="false" onAction="#CustomerSignUpButton" prefHeight="32.0" prefWidth="76.0" style="-fx-background-color: #B80000;" text="Sign up" textFill="WHITE" AnchorPane.bottomAnchor="420.0" AnchorPane.leftAnchor="299.0" AnchorPane.rightAnchor="475.0" AnchorPane.topAnchor="348.0">
+                  <font>
+                     <Font name="MV Boli" size="13.0" />
+                  </font>
+                  <effect>
+                     <Bloom />
+                  </effect>
+               </Button>
+               <ImageView fitHeight="433.0" fitWidth="843.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="359.0">
+                  <image>
+                     <Image url="@sign_in.png" />
+                  </image>
+               </ImageView>
+               <Label layoutX="52.0" layoutY="518.0" prefHeight="14.0" prefWidth="76.0" rotate="9.5" text="THE INCREDIBLES" AnchorPane.bottomAnchor="268.0" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="722.0" AnchorPane.topAnchor="518.0">
+                  <font>
+                     <Font name="MV Boli" size="6.0" />
+                  </font>
+               </Label>
+               <Label layoutX="235.0" layoutY="611.0" prefHeight="14.0" prefWidth="76.0" rotate="-10.3" text="THE INCREDIBLES" AnchorPane.bottomAnchor="175.0" AnchorPane.leftAnchor="235.0" AnchorPane.rightAnchor="539.0" AnchorPane.topAnchor="611.0">
+                  <font>
+                     <Font name="MV Boli" size="7.0" />
+                  </font>
+               </Label>
+            </children></AnchorPane>
+        </Scene>
+    </scene>
+</Stage>

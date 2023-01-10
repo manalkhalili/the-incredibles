@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.JAVA.ManagerTable">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="800.0" prefWidth="850.0" style="-fx-background-color: #FFFFF0;">
+            <children>
+               <TableView fx:id="ManagerTable" onSort="#initialize" prefHeight="503.0" prefWidth="842.0" style="-fx-background-color: #FFFFF0;" AnchorPane.bottomAnchor="13.8" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="3.6" AnchorPane.topAnchor="283.00000000000006">
+                  <columns>
+                     <TableColumn fx:id="FName" prefWidth="65.60000610351562" resizable="false" text="First name" />
+                     <TableColumn fx:id="LName" prefWidth="62.399993896484375" resizable="false" text="Last name" />
+                     <TableColumn fx:id="ManagerUserName" prefWidth="71.20001220703125" resizable="false" text="ManagerUserName" />
+                     <TableColumn fx:id="ManagerAddress" prefWidth="48.199981689453125" resizable="false" text="address" />
+                     <TableColumn fx:id="Gender" prefWidth="49.20001220703125" resizable="false" text="Gender" />
+                     <TableColumn fx:id="DateOfBirth" prefWidth="85.79998779296875" resizable="false" text="Date of birth" />
+                     <TableColumn fx:id="ManagerPhone" prefWidth="111.0" resizable="false" text="Manager's phone" />
+                     <TableColumn fx:id="RestaurantID" prefWidth="72.0" resizable="false" text="Rest. ID" />
+                     <TableColumn fx:id="RestaurantName" prefWidth="94.5999755859375" resizable="false" text="Rest. name" />
+                     <TableColumn fx:id="RestaurantPhone" prefWidth="83.79998779296875" text="Rest. phone" />
+                     <TableColumn fx:id="RestaurantAddress" minWidth="0.0" prefWidth="96.79998779296875" resizable="false" text="Rest. address" />
+                  </columns>
+                  <effect>
+                     <DropShadow>
+                        <input>
+                           <InnerShadow />
+                        </input>
+                        <color>
+                           <Color red="0.46578946709632874" green="0.019839180633425713" blue="0.019839180633425713" />
+                        </color>
+                     </DropShadow>
+                  </effect>
+               </TableView>
+               <ImageView fitHeight="65.0" fitWidth="95.0" AnchorPane.bottomAnchor="720.0" AnchorPane.leftAnchor="43.8" AnchorPane.rightAnchor="711.0" AnchorPane.topAnchor="15.0">
+                  <image>
+                     <Image url="@logo.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="80.0" fitWidth="82.0" layoutX="291.0" layoutY="25.0" AnchorPane.bottomAnchor="714.0" AnchorPane.leftAnchor="750.6" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="6.0">
+                  <image>
+                     <Image url="@username.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="179.0" fitWidth="59.0" layoutX="134.0" layoutY="9.0" AnchorPane.bottomAnchor="514.0" AnchorPane.leftAnchor="52.8" AnchorPane.rightAnchor="738.0" AnchorPane.topAnchor="107.0">
+                  <image>
+                     <Image url="@girl11.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="179.0" fitWidth="59.0" layoutX="82.0" layoutY="40.0" AnchorPane.bottomAnchor="514.0" AnchorPane.leftAnchor="124.0" AnchorPane.rightAnchor="667.0" AnchorPane.topAnchor="107.0">
+                  <image>
+                     <Image url="@boy11.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="109.0" fitWidth="200.0" layoutX="111.0" layoutY="50.0" AnchorPane.bottomAnchor="608.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="628.0" AnchorPane.topAnchor="83.0">
+                  <image>
+                     <Image url="@ques.png" />
+                  </image>
+               </ImageView>
+               <Button fx:id="HOMEButton" layoutX="310.0" layoutY="138.0" mnemonicParsing="false" onAction="#Home" prefHeight="44.0" prefWidth="98.0" style="-fx-background-color: #FFFFF0;" text="HOME">
+                  <font>
+                     <Font name="MV Boli" size="18.0" />
+                  </font>
+               </Button>
+               <Button fx:id="OrderNowButton" layoutX="511.0" layoutY="138.0" mnemonicParsing="false" onAction="#OrderNow" prefHeight="44.0" prefWidth="156.0" style="-fx-background-color: #FFFFF0;" text="ORDER NOW">
+                  <font>
+                     <Font name="MV Boli" size="18.0" />
+                  </font>
+               </Button>
+               <Button layoutX="144.0" layoutY="3.0" mnemonicParsing="false" onAction="#TheInc" prefHeight="86.0" prefWidth="367.0" style="-fx-background-color: #FFFFF0;" text="THE INCREDIBLES">
+                  <font>
+                     <Font name="MV Boli" size="36.0" />
+                  </font>
+               </Button>
+               <Button fx:id="UserNameButton" layoutX="595.0" layoutY="18.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="156.0" style="-fx-background-color: #FFFFF0;" text="Username">
+                  <font>
+                     <Font name="MV Boli" size="24.0" />
+                  </font>
+               </Button>
+            </children></AnchorPane>
+        </Scene>
+    </scene>
+</Stage>

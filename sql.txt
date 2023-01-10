@@ -1,0 +1,86 @@
+create table RESTAURANT
+ (
+ RestID int not null , 
+ RestPhone int not null, 
+ RestAddress VARCHAR2(30) not null, 
+ RestName VARCHAR2(30) not null,
+ constraint RESTAURANT_PK primary key(RestID)
+ );
+
+create table CUSTOMER
+(
+CustomerUserName varchar2(15) not null,
+CustomerPassword varchar2(30) not null,
+CustomerFName varchar2(15) not null,
+CustomerLName varchar2(15) not null,
+CustomerBDate date not null,
+CustomerAddress varchar2(30) not null,
+CustomerPhoneNum int not null,
+constraint customer_pk primary key(CustomerUserName)
+);
+alter table CUSTOMER add CustomerGender varchar2(1) not null;
+
+ create table MANAGERSS
+(
+ManagerUserName varchar2(15) not null,
+ManagerPassword varchar2(30),
+ManagerFName varchar2(15) not null,
+ManagerLName varchar2(15) not null,
+ManagerBDate date not null,
+ManagerAddress varchar2(30) not null,
+ManagerPhoneNum int not null,
+RestID int not null,
+constraint managerss_pk primary key(ManagerUserName),
+constraint managerss_restaurant_fk foreign key(RestID)references RESTAURANT(RestID)
+);
+alter table MANAGERSS add ManagerGender varchar2(1) not null;
+alter table MANAGERSS add RestName varchar2(30) not null;
+alter table MANAGERSS add RestAddress varchar(30) not null;
+alter table MANAGERSS add RestPhone int not null;
+
+create table ITEM
+(
+ItemName varchar2(30) not null,
+Price int not null,
+constraint ITEM_PK primary key(ItemName)
+);
+
+create table BILL
+(
+BillID int not null,
+BillDate date not null,
+Price int not null,
+itemName varchar2(15) not null,
+ItemQuantity int not null,
+customerUserName varchar2(15) not null,
+constraint BILL_PK primary key(BillID),
+constraint bill_item_fk foreign key(itemName)references ITEM(ItemName),
+constraint bill_customer_fk foreign key(customerUserName)references CUSTOMER(customerUserName)
+);
+
+insert into ITEM (itemname,price) values ('CREPE',20);
+
+select * from item ;
+
+create table BILL_ITEMS
+ (
+ BILLID number not null , 
+ ITEMNAME varchar2(30) not null, 
+ price number not null, 
+ qty int not null,
+constraint bill_id_fk foreign key(BILLID)references BILL(BILLID),
+constraint item_name_fk foreign key(ITEMNAME)references ITEM(ITEMNAME),
+constraint BILLITEMS_PK primary key(BillID,ITEMNAME)
+ );
+ 
+ insert into BILL_ITEMS (billid,itemname,price,qty) values (25,'TEA',(select price from ITEM where itemname = 'TEA'),1);
+select price from ITEM where itemname = 'CREPE';
+
+select * from bill_ITEMS ;
+insert into ITEM (itemname,price) values ('TOAST',7);
+commit;
+insert into BILL_ITEMS values (1,'TEA',(select price from ITEM where itemname = 'TEA'),1) ;
+update bill_items set qty = 2 where billid = 2 and itemname = 'CREPE';
+
+
+SELECT sum(PRICE*QTY) from BILL_ITEMS

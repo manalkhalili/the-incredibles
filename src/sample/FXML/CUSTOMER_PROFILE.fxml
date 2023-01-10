@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.JAVA.CustomerProfileController">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="800.0" prefWidth="850.0" style="-fx-background-color: #FFFFF0;">
+            <children>
+               <ImageView fitHeight="362.0" fitWidth="455.0" layoutX="396.0" layoutY="442.0" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="396.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="442.0">
+                  <image>
+                     <Image url="@CustomerProfile.png" />
+                  </image>
+               </ImageView>
+               <Label fx:id="Mgender" layoutX="12.0" layoutY="387.0" prefHeight="39.0" prefWidth="79.0" text="Gender" AnchorPane.bottomAnchor="374.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="759.0" AnchorPane.topAnchor="387.0">
+                  <font>
+                     <Font name="MV Boli" size="22.0" />
+                  </font>
+               </Label>
+               <Label fx:id="Mlabelfirst11" layoutX="9.0" layoutY="450.0" prefHeight="39.0" prefWidth="120.0" text="Password" AnchorPane.bottomAnchor="311.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="721.0" AnchorPane.topAnchor="450.0">
+                  <font>
+                     <Font name="MV Boli" size="22.0" />
+                  </font>
+               </Label>
+               <Button fx:id="UpdateButton" layoutX="150.0" layoutY="629.0" mnemonicParsing="false" onAction="#UpdateInfo" prefHeight="39.0" prefWidth="105.0" style="-fx-background-color: #B80000;" text="Update" textFill="WHITE" AnchorPane.bottomAnchor="127.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="595.0" AnchorPane.topAnchor="629.0">
+                  <font>
+                     <Font name="MV Boli" size="18.0" />
+                  </font>
+                  <effect>
+                     <Bloom />
+                  </effect>
+               </Button>
+               <Label fx:id="CustomerId" layoutY="508.0" prefHeight="39.0" prefWidth="231.0" text="Customer's username" AnchorPane.bottomAnchor="253.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="619.0" AnchorPane.topAnchor="508.0">
+                  <font>
+                     <Font name="MV Boli" size="22.0" />
+                  </font>
+               </Label>
+               <TextField fx:id="userName" layoutX="222.0" layoutY="515.0" prefHeight="25.0" prefWidth="174.0" AnchorPane.bottomAnchor="260.0" AnchorPane.leftAnchor="222.0" AnchorPane.rightAnchor="454.0" AnchorPane.topAnchor="515.0" />
+               <PasswordField fx:id="password" layoutX="222.0" layoutY="457.0" AnchorPane.bottomAnchor="318.0" AnchorPane.leftAnchor="222.0" AnchorPane.rightAnchor="454.0" AnchorPane.topAnchor="457.0" />
+               <Label fx:id="Clabelcity" layoutX="136.0" layoutY="34.0" prefHeight="39.0" prefWidth="88.0" text="Address" AnchorPane.bottomAnchor="565.0" AnchorPane.leftAnchor="405.0" AnchorPane.rightAnchor="357.0" AnchorPane.topAnchor="196.0">
+                  <font>
+                     <Font name="MV Boli" size="22.0" />
+                  </font>
+               </Label>
+               <TextField fx:id="ADDRESS" layoutX="452.0" layoutY="81.0" prefHeight="18.0" prefWidth="149.0" AnchorPane.bottomAnchor="572.0" AnchorPane.leftAnchor="614.0" AnchorPane.rightAnchor="62.0" AnchorPane.topAnchor="203.0" />
+               <Label fx:id="Mphonesign" layoutX="21.0" layoutY="67.0" prefHeight="39.0" prefWidth="158.0" text="Phone number" AnchorPane.bottomAnchor="495.0" AnchorPane.leftAnchor="401.0" AnchorPane.rightAnchor="291.0" AnchorPane.topAnchor="266.0">
+                  <font>
+                     <Font name="MV Boli" size="22.0" />
+                  </font>
+               </Label>
+               <TextField fx:id="PhoneNum" layoutX="35.0" layoutY="140.0" prefHeight="25.0" prefWidth="174.0" AnchorPane.bottomAnchor="502.0" AnchorPane.leftAnchor="614.0" AnchorPane.rightAnchor="62.0" AnchorPane.topAnchor="273.0" />
+               <Label fx:id="Mbirth" layoutX="210.0" layoutY="93.0" prefHeight="33.0" prefWidth="149.0" text="Date of birth" AnchorPane.bottomAnchor="429.0" AnchorPane.leftAnchor="401.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="332.0">
+                  <font>
+                     <Font name="MV Boli" size="22.0" />
+                  </font>
+               </Label>
+               <TextField fx:id="Gender" layoutX="222.0" layoutY="394.0" prefHeight="25.0" prefWidth="173.0" />
+               <TextField fx:id="birthDate" layoutX="576.0" layoutY="332.0" prefHeight="18.0" prefWidth="149.0" AnchorPane.bottomAnchor="436.0" AnchorPane.leftAnchor="614.0" AnchorPane.rightAnchor="62.0" AnchorPane.topAnchor="339.0" />
+               <ImageView fitHeight="65.0" fitWidth="95.0" layoutX="17.0" layoutY="22.0">
+                  <image>
+                     <Image url="@logo.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="80.0" fitWidth="82.0" layoutX="718.0" layoutY="14.0">
+                  <image>
+                     <Image url="@username.png" />
+                  </image>
+               </ImageView>
+               <Button fx:id="HOMEButton" layoutX="281.0" layoutY="108.0" mnemonicParsing="false" onAction="#Home" prefHeight="44.0" prefWidth="98.0" style="-fx-background-color: #FFFFF0;" text="HOME">
+                  <font>
+                     <Font name="MV Boli" size="18.0" />
+                  </font>
+               </Button>
+               <Button fx:id="OrderNowButton" layoutX="481.0" layoutY="108.0" mnemonicParsing="false" onAction="#OrderNow" prefHeight="44.0" prefWidth="156.0" style="-fx-background-color: #FFFFF0;" text="ORDER NOW">
+                  <font>
+                     <Font name="MV Boli" size="18.0" />
+                  </font>
+               </Button>
+               <Button layoutX="121.0" layoutY="11.0" mnemonicParsing="false" onAction="#TheInc" prefHeight="86.0" prefWidth="367.0" style="-fx-background-color: #FFFFF0;" text="THE INCREDIBLES">
+                  <font>
+                     <Font name="MV Boli" size="36.0" />
+                  </font>
+               </Button>
+               <Button fx:id="OrderNowButton1" layoutX="559.0" layoutY="25.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="156.0" style="-fx-background-color: #FFFFF0;" text="Username">
+                  <font>
+                     <Font name="MV Boli" size="24.0" />
+                  </font>
+               </Button>
+               <Label layoutX="656.0" layoutY="243.0" text="YYYY-MM-DD" textFill="#949494">
+                  <font>
+                     <Font name="MV Boli" size="13.0" />
+                  </font>
+               </Label>
+               <Button fx:id="UpdateButton1" layoutX="69.0" layoutY="159.0" mnemonicParsing="false" onAction="#GetInfo" prefHeight="44.0" prefWidth="218.0" style="-fx-background-color: #B80000;" text="Get your informations" textFill="WHITE">
+                  <font>
+                     <Font name="MV Boli" size="18.0" />
+                  </font>
+                  <effect>
+                     <Bloom />
+                  </effect>
+               </Button>
+               <Label fx:id="Mgender1" layoutX="9.0" layoutY="266.0" prefHeight="39.0" prefWidth="119.0" text="First name">
+                  <font>
+                     <Font name="MV Boli" size="22.0" />
+                  </font>
+               </Label>
+               <TextField fx:id="FName" layoutX="200.0" layoutY="273.0" prefHeight="25.0" prefWidth="173.0" />
+               <Label fx:id="Mgender2" layoutX="11.0" layoutY="332.0" prefHeight="39.0" prefWidth="117.0" text="Last name">
+                  <font>
+                     <Font name="MV Boli" size="22.0" />
+                  </font>
+               </Label>
+               <TextField fx:id="LName" layoutX="218.0" layoutY="339.0" prefHeight="25.0" prefWidth="173.0" />
+            </children></AnchorPane>
+        </Scene>
+    </scene>
+</Stage>

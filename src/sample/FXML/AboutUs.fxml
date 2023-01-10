@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.JAVA.AboutUsController">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="800.0" prefWidth="850.0" style="-fx-background-color: #FFFFF0;">
+            <children>
+               <ImageView fitHeight="369.0" fitWidth="390.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="433.0" AnchorPane.topAnchor="431.0">
+                  <image>
+                     <Image url="@aboutus.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="242.0" fitWidth="390.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="417.0" AnchorPane.rightAnchor="43.0" AnchorPane.topAnchor="544.0">
+                  <image>
+                     <Image url="@txtt.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="140.0" fitWidth="142.0" rotate="180.0" AnchorPane.bottomAnchor="325.0" AnchorPane.leftAnchor="665.0" AnchorPane.rightAnchor="43.0" AnchorPane.topAnchor="335.0">
+                  <image>
+                     <Image url="@txt.png" />
+                  </image>
+               </ImageView>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This project is an application that supports restaurants in the city of Nablus, where a person can order food through it, and the restaurant manager can modify the information of his restaurant, and we have relied on the characters of The Incredibles movie, especially the character of the child Dash because it is characterized by high speed" wrappingWidth="285.0" AnchorPane.bottomAnchor="33.9208" AnchorPane.leftAnchor="470.0" AnchorPane.rightAnchor="95.0" AnchorPane.topAnchor="563.051">
+                  <font>
+                     <Font name="MV Boli" size="14.0" />
+                  </font>
+               </Text>
+               <ImageView fitHeight="140.0" fitWidth="142.0" layoutX="333.0" layoutY="267.0" rotate="180.0" AnchorPane.bottomAnchor="347.0" AnchorPane.leftAnchor="263.0" AnchorPane.rightAnchor="445.0" AnchorPane.topAnchor="313.0">
+                  <image>
+                     <Image url="@txt.png" />
+                  </image>
+               </ImageView>
+               <Text layoutX="333.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farah Touqan" AnchorPane.bottomAnchor="410.0" AnchorPane.leftAnchor="281.67" AnchorPane.rightAnchor="455.37" AnchorPane.topAnchor="360.495">
+                  <font>
+                     <Font name="MV Boli" size="18.0" />
+                  </font>
+               </Text>
+               <Text layoutX="179.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manal Khalili" AnchorPane.bottomAnchor="396.5" AnchorPane.leftAnchor="675.57" AnchorPane.rightAnchor="67.423" AnchorPane.topAnchor="374.495">
+                  <font>
+                     <Font name="MV Boli" size="18.0" />
+                  </font>
+               </Text>
+               <Text layoutX="212.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11923793" AnchorPane.bottomAnchor="389.973" AnchorPane.leftAnchor="281.67" AnchorPane.rightAnchor="487.32" AnchorPane.topAnchor="382.634">
+                  <font>
+                     <Font name="MV Boli" size="17.0" />
+                  </font>
+               </Text>
+               <Text layoutX="322.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11925863" AnchorPane.bottomAnchor="367.973" AnchorPane.leftAnchor="689.0" AnchorPane.rightAnchor="79.32" AnchorPane.topAnchor="404.634">
+                  <font>
+                     <Font name="MV Boli" size="17.0" />
+                  </font>
+               </Text>
+               <ImageView fitHeight="164.0" fitWidth="168.0" layoutX="444.0" layoutY="325.0" AnchorPane.bottomAnchor="445.0" AnchorPane.leftAnchor="497.0" AnchorPane.rightAnchor="185.0" AnchorPane.topAnchor="191.0">
+                  <image>
+                     <Image url="@imageManal.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="164.0" fitWidth="168.0" layoutX="238.0" layoutY="134.0" AnchorPane.bottomAnchor="445.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="612.0" AnchorPane.topAnchor="191.0">
+                  <image>
+                     <Image url="@imageFarah.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="65.0" fitWidth="95.0" layoutX="235.0" layoutY="27.0" AnchorPane.bottomAnchor="721.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="741.0" AnchorPane.topAnchor="14.0">
+                  <image>
+                     <Image url="@logo.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="80.0" fitWidth="82.0" layoutX="540.0" layoutY="13.0" AnchorPane.bottomAnchor="715.0" AnchorPane.leftAnchor="721.0" AnchorPane.rightAnchor="47.0" AnchorPane.topAnchor="5.0">
+                  <image>
+                     <Image url="@username.png" />
+                  </image>
+               </ImageView>
+               <Label layoutX="118.0" layoutY="14.0" prefHeight="62.0" prefWidth="341.0" text="THE INCREDIBLES" AnchorPane.bottomAnchor="724.0" AnchorPane.leftAnchor="118.0" AnchorPane.rightAnchor="391.0" AnchorPane.topAnchor="14.0">
+                  <font>
+                     <Font name="MV Boli" size="36.0" />
+                  </font>
+                  <cursor>
+                     <Cursor fx:constant="DEFAULT" />
+                  </cursor>
+               </Label>
+               <Button fx:id="HOMEButton" layoutX="237.0" layoutY="111.0" mnemonicParsing="false" onAction="#Home" prefHeight="44.0" prefWidth="102.0" style="-fx-background-color: #FFFFF0;" text="HOME">
+                  <font>
+                     <Font name="MV Boli" size="18.0" />
+                  </font>
+               </Button>
+               <Button fx:id="OrderNowButton" layoutX="459.0" layoutY="111.0" mnemonicParsing="false" onAction="#OrderNow" prefHeight="44.0" prefWidth="138.0" style="-fx-background-color: #FFFFF0;" text="ORDER NOW">
+                  <font>
+                     <Font name="MV Boli" size="18.0" />
+                  </font>
+               </Button>
+               <Button layoutX="581.0" layoutY="15.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="138.0" style="-fx-background-color: #FFFFF0;" text="Username">
+                  <font>
+                     <Font name="MV Boli" size="24.0" />
+                  </font>
+               </Button>
+            </children></AnchorPane>
+        </Scene>
+    </scene>
+</Stage>

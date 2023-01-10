@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.JAVA.finishController">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="800.0" prefWidth="850.0" style="-fx-background-color: #FFFFF0;">
+            <children>
+               <ImageView fitHeight="443.0" fitWidth="739.0" AnchorPane.bottomAnchor="-19.0" AnchorPane.leftAnchor="49.799" AnchorPane.rightAnchor="61.0" AnchorPane.topAnchor="376.0">
+                  <image>
+                     <Image url="@finish.png" />
+                  </image>
+               </ImageView>
+               <Text layoutX="134.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YOUR ORDER HAS ARRIVED TO US" AnchorPane.bottomAnchor="530.0" AnchorPane.leftAnchor="106.24" AnchorPane.rightAnchor="106.95" AnchorPane.topAnchor="211.0">
+                  <font>
+                     <Font name="MV Boli" size="36.0" />
+                  </font>
+               </Text>
+               <Text layoutX="109.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IT WILL REACH YOU WITHIN 45 MINUTES" AnchorPane.bottomAnchor="463.0" AnchorPane.leftAnchor="168.65" AnchorPane.rightAnchor="170.14" AnchorPane.topAnchor="297.0">
+                  <font>
+                     <Font name="MV Boli" size="24.0" />
+                  </font>
+               </Text>
+               <ImageView fitHeight="65.0" fitWidth="95.0" AnchorPane.bottomAnchor="711.0" AnchorPane.leftAnchor="23.799" AnchorPane.rightAnchor="731.0" AnchorPane.topAnchor="24.0">
+                  <image>
+                     <Image url="@logo.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="80.0" fitWidth="82.0" layoutX="243.0" layoutY="73.0" AnchorPane.bottomAnchor="705.0" AnchorPane.leftAnchor="730.6" AnchorPane.rightAnchor="37.0" AnchorPane.topAnchor="15.0">
+                  <image>
+                     <Image url="@username.png" />
+                  </image>
+               </ImageView>
+               <Text layoutX="120.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THANK YOU :)" AnchorPane.bottomAnchor="391.0" AnchorPane.leftAnchor="334.42" AnchorPane.rightAnchor="334.77" AnchorPane.topAnchor="369.0">
+                  <font>
+                     <Font name="MV Boli" size="24.0" />
+                  </font>
+               </Text>
+               <Button fx:id="HOMEButton" layoutX="261.0" layoutY="118.0" mnemonicParsing="false" onAction="#Home" prefHeight="44.0" prefWidth="98.0" style="-fx-background-color: #FFFFF0;" text="HOME">
+                  <font>
+                     <Font name="MV Boli" size="18.0" />
+                  </font>
+               </Button>
+               <Button fx:id="OrderNowButton" layoutX="465.0" layoutY="118.0" mnemonicParsing="false" onAction="#OrderNow" prefHeight="44.0" prefWidth="156.0" style="-fx-background-color: #FFFFF0;" text="ORDER NOW">
+                  <font>
+                     <Font name="MV Boli" size="18.0" />
+                  </font>
+               </Button>
+               <Button layoutX="119.0" layoutY="15.0" mnemonicParsing="false" onAction="#TheInc" prefHeight="86.0" prefWidth="367.0" style="-fx-background-color: #FFFFF0;" text="THE INCREDIBLES">
+                  <font>
+                     <Font name="MV Boli" size="36.0" />
+                  </font>
+               </Button>
+               <Button layoutX="575.0" layoutY="25.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="156.0" style="-fx-background-color: #FFFFF0;" text="Username">
+                  <font>
+                     <Font name="MV Boli" size="24.0" />
+                  </font>
+               </Button>
+               <Button layoutX="65.0" layoutY="372.0" mnemonicParsing="false" onAction="#Report" prefHeight="47.0" prefWidth="89.0" style="-fx-background-color: #FFFFF0;" text="Report">
+                  <font>
+                     <Font name="MV Boli" size="18.0" />
+                  </font>
+               </Button>
+            </children></AnchorPane>
+        </Scene>
+    </scene>
+</Stage>

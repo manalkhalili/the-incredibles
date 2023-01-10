@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.JAVA.billController">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="800.0" prefWidth="850.0" style="-fx-background-color: #FFFFF0;">
+            <children>
+               <ImageView fitHeight="65.0" fitWidth="95.0" AnchorPane.bottomAnchor="720.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="731.0" AnchorPane.topAnchor="15.0">
+                  <image>
+                     <Image url="@logo.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="80.0" fitWidth="82.0" layoutX="623.0" layoutY="40.0" AnchorPane.bottomAnchor="714.0" AnchorPane.leftAnchor="731.0" AnchorPane.rightAnchor="37.0" AnchorPane.topAnchor="6.0">
+                  <image>
+                     <Image url="@username.png" />
+                  </image>
+               </ImageView>
+
+               <ImageView fitHeight="448.0" fitWidth="634.0" AnchorPane.bottomAnchor="-18.0" AnchorPane.leftAnchor="70.6" AnchorPane.rightAnchor="145.0" AnchorPane.topAnchor="370.0">
+                  <image>
+                     <Image url="@bill.png" />
+                  </image>
+               </ImageView>
+               <TextField fx:id="TotalPrice" prefHeight="26.0" prefWidth="201.0" AnchorPane.bottomAnchor="292.6" AnchorPane.leftAnchor="589.0" AnchorPane.rightAnchor="59.4" AnchorPane.topAnchor="481.0" />
+               <Text layoutX="116.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL PRICE :" textAlignment="CENTER" wrappingWidth="179.59991455078148" AnchorPane.bottomAnchor="323.5" AnchorPane.leftAnchor="599.59" AnchorPane.rightAnchor="70.4" AnchorPane.topAnchor="447.495">
+                  <font>
+                     <Font name="MV Boli" size="18.0" />
+                  </font>
+               </Text>
+               <TableView fx:id="BillTable" layoutX="252.0" layoutY="153.0" prefHeight="247.0" prefWidth="366.0" style="-fx-background-color: #FFFFF0;" AnchorPane.bottomAnchor="400.0" AnchorPane.leftAnchor="252.0" AnchorPane.rightAnchor="251.0" AnchorPane.topAnchor="153.0">
+                  <columns>
+                     <TableColumn fx:id="Items" prefWidth="145.80001831054688" text="ITEMS" />
+                     <TableColumn fx:id="Quantity" prefWidth="90.19998168945312" text="QUANTITY" />
+                     <TableColumn fx:id="Price" prefWidth="109.60003662109375" text="PRICE" />
+                  </columns>
+               </TableView>
+               <Button mnemonicParsing="false" onAction="#confirmYourOrder" style="-fx-background-color: #B80000;" text="Confirm your order" textFill="#f8f8f8" AnchorPane.bottomAnchor="150.6" AnchorPane.leftAnchor="688.0" AnchorPane.rightAnchor="22.8" AnchorPane.topAnchor="619.0">
+                  <effect>
+                     <Bloom />
+                  </effect>
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="HOMEButton" layoutX="251.0" layoutY="93.0" mnemonicParsing="false" onAction="#Home" prefHeight="44.0" prefWidth="98.0" style="-fx-background-color: #FFFFF0;" text="HOME">
+                  <font>
+                     <Font name="MV Boli" size="18.0" />
+                  </font>
+               </Button>
+               <Button fx:id="OrderNowButton" layoutX="459.0" layoutY="93.0" mnemonicParsing="false" onAction="#OrderNow" prefHeight="44.0" prefWidth="156.0" style="-fx-background-color: #FFFFF0;" text="ORDER NOW">
+                  <font>
+                     <Font name="MV Boli" size="18.0" />
+                  </font>
+               </Button>
+               <Button layoutX="127.0" layoutY="4.0" mnemonicParsing="false" onAction="#TheInc" prefHeight="86.0" prefWidth="367.0" style="-fx-background-color: #FFFFF0;" text="THE INCREDIBLES">
+                  <font>
+                     <Font name="MV Boli" size="36.0" />
+                  </font>
+               </Button>
+               <Button fx:id="usernameButton" layoutX="575.0" layoutY="16.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="156.0" style="-fx-background-color: #FFFFF0;" text="Username">
+                  <font>
+                     <Font name="MV Boli" size="24.0" />
+                  </font>
+               </Button>
+               <Text fx:id="Date" layoutX="8.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date :" wrappingWidth="179.59991455078148">
+                  <font>
+                     <Font name="MV Boli" size="13.0" />
+                  </font>
+               </Text>
+               <Text fx:id="billID" layoutX="8.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bill ID :" wrappingWidth="179.59991455078148">
+                  <font>
+                     <Font name="MV Boli" size="14.0" />
+                  </font>
+               </Text>
+               <Text fx:id="CustomerUserName" layoutX="8.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer username :" wrappingWidth="179.59991455078148">
+                  <font>
+                     <Font name="MV Boli" size="14.0" />
+                  </font>
+               </Text>
+               <Label layoutX="26.0" layoutY="264.0" text="New quantity">
+                  <font>
+                     <Font name="MV Boli" size="14.0" />
+                  </font></Label>
+               <TextField fx:id="qty" layoutX="23.0" layoutY="286.0" />
+               <Button fx:id="btnUpdate" layoutX="27.0" layoutY="321.0" mnemonicParsing="false" onAction="#updateQty" style="-fx-background-color: #B80000;" text="Update" textFill="#f8f8f8">
+                  <effect>
+                     <Bloom />
+                  </effect>
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+               </Button>
+               <Button fx:id="delete" layoutX="117.0" layoutY="321.0" mnemonicParsing="false" onAction="#DeleteButton" style="-fx-background-color: #B80000;" text="delete item" textFill="#f8f8f8">
+                  <effect>
+                     <Bloom />
+                  </effect>
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+               </Button>
+            </children></AnchorPane>
+        </Scene>
+    </scene>
+</Stage>
